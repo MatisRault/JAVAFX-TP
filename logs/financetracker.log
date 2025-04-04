@@ -1,0 +1,17 @@
+2025-04-04 10:25:33 INFO  com.fahze.demojavafx.HelloApplication - Starting FinanceTracker application
+2025-04-04 10:25:34 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-04 10:25:34 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-04 10:25:34 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 0 expenses
+2025-04-04 10:25:34 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 0 expenses
+2025-04-04 10:25:35 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-04 10:25:38 INFO  com.fahze.demojavafx.HelloController - Opening Add Line Dialog
+2025-04-04 10:25:54 INFO  com.fahze.demojavafx.HelloController - Processing new expense for period: 121
+2025-04-04 10:25:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Attempting to insert new expense for period: 121
+2025-04-04 10:25:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully inserted expense for period: 121
+2025-04-04 10:25:54 INFO  com.fahze.demojavafx.HelloController - Successfully added expense for period: 121
+2025-04-04 10:28:02 INFO  com.fahze.demojavafx.HelloApplication - Starting FinanceTracker application
+2025-04-04 10:28:03 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-04 10:28:03 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-04 10:28:03 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 1 expenses
+2025-04-04 10:28:03 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 1 expenses
+2025-04-04 10:28:05 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully

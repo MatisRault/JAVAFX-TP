@@ -5,19 +5,23 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class HelloApplication extends Application {
+    private static final Logger logger = LogManager.getLogger(HelloApplication.class);
+
     @Override
     public void start(Stage stage) throws IOException {
         // Vérifier que la base de données est OK
         if (!Database.isOK()) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, "Could not initialize database. Application will exit.");
+            logger.error("Could not initialize database. Application will exit.");
             System.exit(1);
         }
+
+        logger.info("Starting FinanceTracker application");
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("table.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -25,6 +29,8 @@ public class HelloApplication extends Application {
         stage.setTitle("Tableau de dépenses");
         stage.setScene(scene);
         stage.show();
+
+        logger.info("Application started successfully");
     }
 
     public static void main(String[] args) {

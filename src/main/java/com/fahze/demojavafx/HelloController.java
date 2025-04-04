@@ -10,11 +10,15 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.Optional;
 
 public class HelloController {
+    private static final Logger logger = LogManager.getLogger(HelloController.class);
+
     @FXML private TableView<Line> tableView;
     @FXML private TableColumn<Line, String> periodColumn;
     @FXML private TableColumn<Line, String> totalColumn;
@@ -30,6 +34,8 @@ public class HelloController {
 
     @FXML
     public void initialize() {
+        logger.info("Initializing HelloController and setting up TableView");
+
         // Link TableView columns to Line properties
         periodColumn.setCellValueFactory(new PropertyValueFactory<>("period"));
         totalColumn.setCellValueFactory(new PropertyValueFactory<>("total"));
@@ -46,11 +52,15 @@ public class HelloController {
 
         // Set data
         tableView.setItems(data);
+
+        logger.info("TableView initialized with {} expenses", data.size());
     }
 
     @FXML
     public void openAddLineDialog() {
         try {
+            logger.info("Opening Add Line Dialog");
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("addLineDialog.fxml"));
             GridPane gridPane = loader.load();
 
@@ -80,21 +90,26 @@ public class HelloController {
             // Show dialog
             Optional<Line> result = dialog.showAndWait();
             result.ifPresent(expense -> {
+                logger.info("Processing new expense for period: {}", expense.getPeriod());
+
                 // Ajouter la dépense à la base de données
                 if (ExpenseDAO.insertExpense(expense)) {
                     // Si l'insertion en base réussit, ajouter à la liste des dépenses
                     data.add(expense);
+                    logger.info("Successfully added expense for period: {}", expense.getPeriod());
+                } else {
+                    logger.warn("Failed to add expense for period: {}", expense.getPeriod());
                 }
             });
 
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Error opening Add Line Dialog", e);
         }
     }
 
     @FXML
     protected void onAdd(ActionEvent event){
-        System.out.println("Bouton appuyer");
+        logger.debug("Add button pressed");
         event.consume();
     }
 }

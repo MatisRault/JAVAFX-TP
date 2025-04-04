@@ -3,12 +3,13 @@ package com.fahze.demojavafx.db;
 import com.fahze.demojavafx.Line;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ExpenseDAO {
+    private static final Logger logger = LogManager.getLogger(ExpenseDAO.class);
 
     public static ObservableList<Line> getAllExpenses() {
         ObservableList<Line> expenses = FXCollections.observableArrayList();
@@ -17,6 +18,8 @@ public class ExpenseDAO {
         try (Connection connection = Database.connect();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(query)) {
+
+            logger.info("Fetching all expenses from database");
 
             while (resultSet.next()) {
                 Line expense = new Line(
@@ -32,8 +35,10 @@ public class ExpenseDAO {
                 );
                 expenses.add(expense);
             }
+
+            logger.info("Successfully retrieved {} expenses", expenses.size());
         } catch (SQLException exception) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, "Error while getting expenses: " + exception.getMessage());
+            logger.error("Error while getting expenses", exception);
         }
         return expenses;
     }
@@ -44,6 +49,8 @@ public class ExpenseDAO {
 
         try (Connection connection = Database.connect();
              PreparedStatement statement = connection.prepareStatement(query)) {
+
+            logger.info("Attempting to insert new expense for period: {}", expense.getPeriod());
 
             statement.setString(1, expense.getPeriod());
             statement.setFloat(2, expense.getTotal());
@@ -56,9 +63,16 @@ public class ExpenseDAO {
             statement.setFloat(9, expense.getOther());
 
             int rowsAffected = statement.executeUpdate();
-            return rowsAffected > 0;
+
+            if (rowsAffected > 0) {
+                logger.info("Successfully inserted expense for period: {}", expense.getPeriod());
+                return true;
+            } else {
+                logger.warn("No rows affected when inserting expense for period: {}", expense.getPeriod());
+                return false;
+            }
         } catch (SQLException exception) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, "Error while inserting expense: " + exception.getMessage());
+            logger.error("Error while inserting expense for period: {}", expense.getPeriod(), exception);
             return false;
         }
     }

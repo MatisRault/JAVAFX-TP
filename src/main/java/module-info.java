@@ -12,6 +12,9 @@ module com.fahze.demojavafx {
     requires java.sql;
     requires org.xerial.sqlitejdbc;
 
+    requires org.apache.logging.log4j;
+    requires org.slf4j;
+
     opens com.fahze.demojavafx to javafx.fxml;
     exports com.fahze.demojavafx;
 

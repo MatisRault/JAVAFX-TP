@@ -1,21 +1,22 @@
 package com.fahze.demojavafx.db;
 
 import org.sqlite.JDBC;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Database {
+    private static final Logger logger = LogManager.getLogger(Database.class);
 
     /**
      * Location of database
      */
-    private static final String location = "database.db";
+    private static final String location = DatabaseConfig.getDatabasePath();
 
     /**
      * Currently only table needed
@@ -23,9 +24,15 @@ public class Database {
     private static final String requiredTable = "Expense";
 
     public static boolean isOK() {
-        if (!checkDrivers()) return false; //driver errors
+        if (!checkDrivers()) {
+            logger.error("SQLite JDBC Drivers could not be started");
+            return false; //driver errors
+        }
 
-        if (!checkConnection()) return false; //can't connect to db
+        if (!checkConnection()) {
+            logger.error("Could not connect to database");
+            return false; //can't connect to db
+        }
 
         return createTableIfNotExists(); //tables didn't exist
     }
@@ -36,7 +43,7 @@ public class Database {
             DriverManager.registerDriver(new JDBC());
             return true;
         } catch (ClassNotFoundException | SQLException classNotFoundException) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, LocalDateTime.now() + ": Could not start SQLite Drivers");
+            logger.error("Could not start SQLite Drivers", classNotFoundException);
             return false;
         }
     }
@@ -45,7 +52,7 @@ public class Database {
         try (Connection connection = connect()) {
             return connection != null;
         } catch (SQLException e) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, LocalDateTime.now() + ": Could not connect to database");
+            logger.error("Could not connect to database", e);
             return false;
         }
     }
@@ -53,25 +60,25 @@ public class Database {
     private static boolean createTableIfNotExists() {
         String createTables =
                 """
-                        CREATE TABLE IF NOT EXISTS expense(
-                             period TEXT NOT NULL,
-                             total REAL NOT NULL,
-                             housing REAL NOT NULL,
-                             food REAL NOT NULL,
-                             outing REAL NOT NULL,
-                             transport REAL NOT NULL,
-                             travel REAL NOT NULL,
-                             taxes REAL NOT NULL,
-                             other REAL NOT NULL
-                     );
-                   """;
+                CREATE TABLE IF NOT EXISTS expense(
+                     period TEXT NOT NULL,
+                     total REAL NOT NULL,
+                     housing REAL NOT NULL,
+                     food REAL NOT NULL,
+                     outing REAL NOT NULL,
+                     transport REAL NOT NULL,
+                     travel REAL NOT NULL,
+                     taxes REAL NOT NULL,
+                     other REAL NOT NULL
+                );
+                """;
 
         try (Connection connection = Database.connect()) {
             PreparedStatement statement = connection.prepareStatement(createTables);
             statement.executeUpdate();
             return true;
         } catch (SQLException exception) {
-            Logger.getAnonymousLogger().log(Level.SEVERE, LocalDateTime.now() + ": Could not find tables in database");
+            logger.error("Could not create table in database", exception);
             return false;
         }
     }
@@ -82,9 +89,7 @@ public class Database {
         try {
             connection = DriverManager.getConnection(dbPrefix + location);
         } catch (SQLException exception) {
-            Logger.getAnonymousLogger().log(Level.SEVERE,
-                    LocalDateTime.now() + ": Could not connect to SQLite DB at " +
-                            location);
+            logger.error("Could not connect to SQLite DB at " + location, exception);
             return null;
         }
         return connection;
