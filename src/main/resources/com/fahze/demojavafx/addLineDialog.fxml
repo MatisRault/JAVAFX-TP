@@ -1,0 +1,40 @@
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<GridPane fx:id="gridPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.fahze.demojavafx.AddLineDialogController"
+          hgap="10" vgap="10">
+
+    <!-- Set Padding Correctly -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Période:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="periodField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Total:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="totalField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Logement:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="housingField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Nourriture:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="foodField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Sorties:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="outingField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Transport:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextField fx:id="transportField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Voyage:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <TextField fx:id="travelField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+    <Label text="Taxes:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <TextField fx:id="taxesField" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+    <Label text="Autres:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <TextField fx:id="otherField" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+</GridPane>

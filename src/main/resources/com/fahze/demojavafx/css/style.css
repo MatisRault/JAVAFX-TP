@@ -1,0 +1,77 @@
+.layout {
+    -fx-background-color: #1e1e1e; /* Fond gris foncé */
+}
+
+.table-view {
+    -fx-background-color: #2d2d2d; /* Fond de tableau légèrement plus clair */
+    -fx-table-cell-border-color: transparent; /* Supprime les bordures des cellules */
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filter,
+.table-view .corner {
+    -fx-background-color: #383838; /* En-têtes de colonne plus foncés */
+    -fx-border-color: transparent; /* Supprime les bordures */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #e0e0e0; /* Texte clair mais pas blanc pur */
+    -fx-font-weight: normal; /* Police non grasse pour plus d'élégance */
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #cccccc; /* Couleur de texte des cellules */
+    -fx-alignment: center-left; /* Alignement du texte */
+    -fx-padding: 8px; /* Espacement interne */
+}
+
+.table-row-cell {
+    -fx-background-color: #2d2d2d; /* Même couleur que le tableau */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #333333; /* Légère alternance pour les lignes impaires */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3c5f8a; /* Bleu foncé pour la sélection */
+}
+
+.titre-label {
+    -fx-font-size: 18px; /* Taille réduite pour plus d'élégance */
+    -fx-font-weight: 300; /* Police fine */
+    -fx-text-fill: #e0e0e0; /* Texte clair */
+    -fx-padding: 15px 0; /* Plus d'espace vertical */
+    -fx-font-family: "Segoe UI Light", sans-serif; /* Police moderne et légère */
+}
+
+/* Styles supplémentaires pour l'interface épurée */
+.button {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #e0e0e0;
+    -fx-background-radius: 2;
+    -fx-border-width: 0;
+    -fx-padding: 8px 15px;
+}
+
+.button:hover {
+    -fx-background-color: #4c4c4c;
+}
+
+.text-field {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #8a8a8a;
+    -fx-border-width: 0;
+    -fx-background-radius: 2;
+    -fx-padding: 8px;
+}
+
+/* Pour une interface plus propre */
+.scroll-bar {
+    -fx-background-color: #2d2d2d;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #5a5a5a;
+}
