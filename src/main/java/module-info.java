@@ -9,6 +9,12 @@ module com.fahze.demojavafx {
     requires org.kordamp.ikonli.javafx;
     requires eu.hansolo.tilesfx;
 
+    requires java.sql;
+    requires org.xerial.sqlitejdbc;
+
     opens com.fahze.demojavafx to javafx.fxml;
     exports com.fahze.demojavafx;
+
+    opens com.fahze.demojavafx.db to javafx.fxml;
+    exports com.fahze.demojavafx.db;
 }

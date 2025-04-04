@@ -1,5 +1,6 @@
 package com.fahze.demojavafx;
 
+import com.fahze.demojavafx.db.ExpenseDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -40,6 +41,9 @@ public class HelloController {
         taxesColumn.setCellValueFactory(new PropertyValueFactory<>("taxes"));
         otherColumn.setCellValueFactory(new PropertyValueFactory<>("other"));
 
+        // Charger les données depuis la base de données
+        data = ExpenseDAO.getAllExpenses();
+
         // Set data
         tableView.setItems(data);
     }
@@ -75,13 +79,18 @@ public class HelloController {
 
             // Show dialog
             Optional<Line> result = dialog.showAndWait();
-            result.ifPresent(data::add);
+            result.ifPresent(expense -> {
+                // Ajouter la dépense à la base de données
+                if (ExpenseDAO.insertExpense(expense)) {
+                    // Si l'insertion en base réussit, ajouter à la liste des dépenses
+                    data.add(expense);
+                }
+            });
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
     @FXML
     protected void onAdd(ActionEvent event){
