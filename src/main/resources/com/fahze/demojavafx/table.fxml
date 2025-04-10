@@ -10,26 +10,36 @@
 <?import javafx.collections.FXCollections?>
 <?import com.fahze.demojavafx.Line?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.fahze.demojavafx.HelloController">
-    <!-- Titre -->
-    <Label styleClass="titre-label">
-        Tableau des Dépenses
-    </Label>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
 
-    <!-- TableView -->
-    <TableView fx:id="tableView">
-        <columns>
-            <TableColumn text="Période" fx:id="periodColumn"/>
-            <TableColumn text="Total" fx:id="totalColumn"/>
-            <TableColumn text="Logement" fx:id="housingColumn"/>
-            <TableColumn text="Nourriture" fx:id="foodColumn"/>
-            <TableColumn text="Sorties" fx:id="outingColumn"/>
-            <TableColumn text="Transport" fx:id="transportColumn"/>
-            <TableColumn text="Voyage" fx:id="travelColumn"/>
-            <TableColumn text="Taxes" fx:id="taxesColumn"/>
-            <TableColumn text="Autres" fx:id="otherColumn"/>
-        </columns>
-    </TableView>
+    <top>
+        <fx:include source="header.fxml"/>
+    </top>
 
-    <Button text="Ajouter une ligne" onAction="#openAddLineDialog"/>
-</VBox>
+    <center>
+        <VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.fahze.demojavafx.HelloController">
+            <!-- Titre -->
+            <Label styleClass="titre-label">
+                Tableau des Dépenses
+            </Label>
+
+            <!-- TableView -->
+            <TableView fx:id="tableView">
+                <columns>
+                    <TableColumn text="Période" fx:id="periodColumn"/>
+                    <TableColumn text="Total" fx:id="totalColumn"/>
+                    <TableColumn text="Logement" fx:id="housingColumn"/>
+                    <TableColumn text="Nourriture" fx:id="foodColumn"/>
+                    <TableColumn text="Sorties" fx:id="outingColumn"/>
+                    <TableColumn text="Transport" fx:id="transportColumn"/>
+                    <TableColumn text="Voyage" fx:id="travelColumn"/>
+                    <TableColumn text="Taxes" fx:id="taxesColumn"/>
+                    <TableColumn text="Autres" fx:id="otherColumn"/>
+                </columns>
+            </TableView>
+
+            <Button text="Ajouter une ligne" onAction="#openAddLineDialog"/>
+        </VBox>
+    </center>
+</BorderPane>

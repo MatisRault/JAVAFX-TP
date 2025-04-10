@@ -2,6 +2,9 @@ module com.fahze.demojavafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires javafx.swing;
+    requires javafx.graphics;
+
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -20,4 +23,7 @@ module com.fahze.demojavafx {
 
     opens com.fahze.demojavafx.db to javafx.fxml;
     exports com.fahze.demojavafx.db;
+
+    // Ajout pour les graphiques
+    opens com.fahze.demojavafx to javafx.base;
 }

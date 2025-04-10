@@ -23,10 +23,11 @@ public class HelloApplication extends Application {
 
         logger.info("Starting FinanceTracker application");
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("table.fxml"));
+        // Chargement de l'écran du tableau de bord
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add(HelloApplication.class.getResource("css/style.css").toExternalForm());
-        stage.setTitle("Tableau de dépenses");
+        stage.setTitle("Finance Tracker - Tableau de bord");
         stage.setScene(scene);
         stage.show();
 

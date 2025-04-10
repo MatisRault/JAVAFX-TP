@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fahze.demojavafx.DashboardController"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <top>
+        <fx:include source="header.fxml"/>
+    </top>
+
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label styleClass="titre-label" text="Tableau de bord"/>
+
+            <HBox alignment="CENTER_RIGHT">
+                <Label text="Période: " />
+                <ChoiceBox fx:id="periodSelector" />
+            </HBox>
+
+            <HBox spacing="20" alignment="CENTER">
+                <PieChart fx:id="expenseDistributionChart" title="Répartition des dépenses"
+                          legendVisible="true" labelsVisible="true" />
+
+                <LineChart fx:id="expenseEvolutionChart" title="Évolution des dépenses">
+                    <xAxis>
+                        <CategoryAxis label="Période" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis label="Montant" />
+                    </yAxis>
+                </LineChart>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
