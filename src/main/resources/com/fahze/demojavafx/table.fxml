@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.collections.FXCollections?>
-<?import com.fahze.demojavafx.Line?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
 
 <BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml">
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fahze.demojavafx.HelloController">
 
     <top>
         <fx:include source="header.fxml"/>
     </top>
 
     <center>
-        <VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.fahze.demojavafx.HelloController">
+        <VBox spacing="10" alignment="CENTER">
             <!-- Titre -->
             <Label styleClass="titre-label">
                 Tableau des Dépenses

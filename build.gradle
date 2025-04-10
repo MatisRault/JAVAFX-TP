@@ -7,7 +7,7 @@ plugins {
 }
 
 group 'com.fahze'
-version '1.0-SNAPSHOT'
+version '1.0.0'  // Version standard sans -SNAPSHOT
 
 repositories {
     mavenCentral()
@@ -16,6 +16,7 @@ repositories {
 ext {
     junitVersion = '5.10.2'
     javafxVersion = '21.0.2'
+    slf4jVersion = '2.0.11'
 }
 
 java {
@@ -58,13 +59,13 @@ dependencies {
         exclude(group: 'org.openjfx')
     }
 
-    // Database
-    implementation('org.xerial:sqlite-jdbc:3.44.1.0')
-
     // Logging
     implementation("org.apache.logging.log4j:log4j-core:2.22.1")
     implementation("org.apache.logging.log4j:log4j-api:2.22.1")
-    implementation("org.slf4j:slf4j-log4j12:2.0.11")
+    implementation("org.slf4j:slf4j-simple:${slf4jVersion}")
+
+    // Database
+    implementation('org.xerial:sqlite-jdbc:3.44.1.0')
 
     // Testing
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
@@ -80,12 +81,15 @@ test {
 
 jlink {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+
+    // Ajout pour résoudre les problèmes de modules
+    addExtraDependencies('slf4j-api', 'slf4j-simple')
+
     launcher {
         name = 'FinanceTracker'
     }
+
     jpackage {
-        // Configuration spécifique à chaque plateforme
-        imageOptions = ['--icon', 'src/main/resources/icon.ico']
         skipInstaller = false
 
         // Options Windows
