@@ -17,27 +17,24 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        // Vérifier que la base de données est OK
         if (!Database.isOK()) {
-            logger.error("Could not initialize database. Application will exit.");
+            logger.error("La database n'a pas pu être chargée, fermeture de l'application.");
             System.exit(1);
         }
 
-        logger.info("Starting FinanceTracker application");
+        logger.info("Lancement de l'application");
 
-        // Chargement de l'icône avec gestion d'erreur
         try (InputStream iconStream = getClass().getResourceAsStream("/icon.png")) {
             if (iconStream != null) {
                 Image icon = new Image(iconStream);
                 stage.getIcons().add(icon);
             } else {
-                logger.warn("Icon not found. Using default icon.");
+                logger.warn("Icon pas trouvée, remplacé par l'icon par défaut.");
             }
         } catch (Exception e) {
-            logger.error("Error loading icon", e);
+            logger.error("Erreur lors du chargement de l'icon", e);
         }
 
-        // Chargement de l'écran du tableau de bord
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add(HelloApplication.class.getResource("css/style.css").toExternalForm());

@@ -6,7 +6,9 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.BorderPane?>
+<?import com.fahze.demojavafx.CurrencySwitchButton?>
 
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
@@ -22,6 +24,12 @@
             <Label styleClass="titre-label">
                 Tableau des Dépenses
             </Label>
+
+            <!-- Ajout du switch de devise -->
+            <HBox alignment="CENTER_RIGHT" spacing="10">
+                <Label text="Devise:"/>
+                <CurrencySwitchButton fx:id="currencySwitch"/>
+            </HBox>
 
             <!-- TableView -->
             <TableView fx:id="tableView">

@@ -19,7 +19,6 @@ public class HeaderController {
 
     @FXML
     public void initialize() {
-        // Initialization code if needed
     }
 
     @FXML
@@ -41,12 +40,10 @@ public class HeaderController {
     }
 
     private Stage getStageFromMenuItem(MenuItem menuItem) {
-        // Méthode modifiée pour gérer les cas où le menu n'est pas dans une fenêtre principale
         try {
             MenuBar menuBar = (MenuBar) menuItem.getParentMenu().getParentPopup().getOwnerNode();
             return (Stage) menuBar.getScene().getWindow();
         } catch (Exception e) {
-            // Si la méthode précédente échoue, on crée une nouvelle fenêtre
             return new Stage();
         }
     }

@@ -7,6 +7,19 @@
     -fx-table-cell-border-color: transparent; /* Supprime les bordures des cellules */
 }
 
+.currency-switch-button {
+    -fx-background-color: #3c5f8a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 3;
+    -fx-min-width: 40px;
+    -fx-max-width: 40px;
+}
+
+.currency-switch-button:hover {
+    -fx-background-color: #4d6fa0;
+}
+
 .table-view .column-header,
 .table-view .column-header-background .filter,
 .table-view .corner {

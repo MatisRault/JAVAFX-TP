@@ -68,3 +68,128 @@
 2025-04-10 10:40:59 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
 2025-04-10 10:40:59 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
 2025-04-10 10:40:59 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-10 14:54:43 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-10 14:54:44 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-10 14:54:44 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 14:54:44 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 14:54:44 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-10 14:55:04 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-10 14:55:04 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 14:55:04 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 14:55:04 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-10 14:55:05 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.0
+2025-04-10 14:55:05 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.0
+2025-04-10 14:55:06 INFO  com.fahze.demojavafx.HelloController - Currency switched to: USD
+2025-04-10 14:55:09 INFO  com.fahze.demojavafx.HelloController - Currency switched to: EUR
+2025-04-10 14:55:09 INFO  com.fahze.demojavafx.HelloController - Currency switched to: USD
+2025-04-10 14:55:14 INFO  com.fahze.demojavafx.HelloController - Currency switched to: EUR
+2025-04-10 14:58:05 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-10 14:58:06 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-10 14:58:06 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 14:58:06 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 14:58:06 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-10 14:58:15 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-10 14:58:15 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 14:58:15 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 14:58:15 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-10 14:58:16 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.0
+2025-04-10 14:58:16 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.0
+2025-04-10 14:58:17 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:17 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:17 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:18 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:19 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:20 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:21 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 14:58:22 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 14:58:22 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 14:58:22 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 14:58:24 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 14:58:24 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 14:58:24 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:04:36 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-10 15:04:37 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-10 15:04:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 15:04:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 15:04:38 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-10 15:04:42 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-10 15:04:42 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 15:04:42 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 15:04:42 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-10 15:04:43 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.0
+2025-04-10 15:04:43 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.0
+2025-04-10 15:04:43 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.0
+2025-04-10 15:04:44 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:04:44 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:04:44 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 15:04:45 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 15:04:46 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 15:04:47 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:04:47 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:04:47 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:05:09 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-10 15:05:10 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-10 15:05:10 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 15:05:10 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 15:05:11 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-10 15:05:49 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-10 15:05:49 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-10 15:05:49 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-10 15:05:49 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.0
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.0
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.0
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:05:50 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD
+2025-04-10 15:05:51 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-10 15:05:51 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-10 15:05:51 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-10 15:05:52 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-10 15:05:52 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-10 15:05:52 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in USD

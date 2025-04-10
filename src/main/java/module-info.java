@@ -20,6 +20,9 @@ module com.fahze.demojavafx {
     opens com.fahze.demojavafx to javafx.fxml;
     exports com.fahze.demojavafx;
 
+    opens com.fahze.demojavafx.service to javafx.fxml;
+    exports com.fahze.demojavafx.service;
+
     opens com.fahze.demojavafx.db to javafx.fxml;
     exports com.fahze.demojavafx.db;
 }
