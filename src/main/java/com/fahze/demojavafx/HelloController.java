@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
 
 public class HelloController {
     private static final Logger logger = LogManager.getLogger(HelloController.class);
@@ -34,6 +35,7 @@ public class HelloController {
 
     private ObservableList<Line> data = FXCollections.observableArrayList();
     private boolean isEuroMode = true;
+    private Float exchangeRate = 1.0f;
 
     @FXML
     public void initialize() {
@@ -55,10 +57,8 @@ public class HelloController {
     }
 
     private void setupTableCells() {
-        // Configurer les cellules avec des formateurs personnalisés pour afficher la devise
         periodColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getPeriod()));
 
-        // Utiliser des cellFactories personnalisées pour les montants
         totalColumn.setCellValueFactory(cellData ->
                 new SimpleStringProperty(formatCurrency(cellData.getValue().getTotal(), isEuroMode)));
 
@@ -89,13 +89,17 @@ public class HelloController {
     }
 
     private void setupCurrencySwitch() {
-        // Initialiser le service de devise
-        CurrencyService.getExchangeRate().thenAccept(rate -> {
-            CurrencyService.setEurToUsdRate(rate);
-            logger.info("Exchange rate set to: {}", rate);
+        CompletableFuture<Double> exchangeRateFuture = CurrencyService.getExchangeRate();
+        exchangeRateFuture.thenAccept(rate -> {
+            exchangeRate = rate.floatValue();
+            logger.info("Exchange rate set to: {}", exchangeRate);
+
+            // Mettre à jour le taux de change pour toutes les lignes
+            for (Line line : data) {
+                line.setExchangeRate(exchangeRate);
+            }
         });
 
-        // Configurer le bouton de switch
         if (currencySwitch != null) {
             currencySwitch.setOnAction(event -> {
                 isEuroMode = currencySwitch.isEuro();
@@ -112,24 +116,17 @@ public class HelloController {
 
         for (Line expense : data) {
             if (isEuroMode) {
-                // Si on revient à l'euro, on reconvertit depuis USD
                 if (!expense.isInEuro()) {
-                    logger.debug("Converting expense {} from USD to EUR", expense.getPeriod());
                     expense.convertToEuro();
                 }
             } else {
-                // Si on passe au dollar, on convertit vers USD
                 if (expense.isInEuro()) {
-                    logger.debug("Converting expense {} from EUR to USD", expense.getPeriod());
                     expense.convertToUsd();
                 }
             }
         }
 
-        // Reconfigurer les cellules avec le nouveau format de devise
         setupTableCells();
-
-        // Forcer le rafraîchissement complet du tableau
         tableView.refresh();
 
         logger.info("Table updated with {} expenses in {}", data.size(), isEuroMode ? "EUR" : "USD");

@@ -17,6 +17,7 @@ public class Line {
     private Float taxes;
     private Float other;
     private boolean inEuro = true;
+    private Float exchangeRate = 1.0f;
 
     public String getPeriod() {
         return period;
@@ -94,38 +95,42 @@ public class Line {
         return inEuro;
     }
 
+    public void setExchangeRate(Float rate) {
+        this.exchangeRate = rate != null && rate > 0 ? rate : 1.0f;
+    }
+
     public void convertToUsd() {
-        if (inEuro) {
-            logger.debug("Converting line {} from EUR to USD", period);
-            float oldTotal = this.total;
-            this.total = (float) CurrencyService.convertEurToUsd(this.total);
-            this.housing = (float) CurrencyService.convertEurToUsd(this.housing);
-            this.food = (float) CurrencyService.convertEurToUsd(this.food);
-            this.outing = (float) CurrencyService.convertEurToUsd(this.outing);
-            this.transport = (float) CurrencyService.convertEurToUsd(this.transport);
-            this.travel = (float) CurrencyService.convertEurToUsd(this.travel);
-            this.taxes = (float) CurrencyService.convertEurToUsd(this.taxes);
-            this.other = (float) CurrencyService.convertEurToUsd(this.other);
-            logger.debug("Converted total from €{} to ${}", oldTotal, this.total);
+        if (inEuro && needsConversion()) {
+            logger.debug("Converting line {} from EUR to USD with rate {}", period, exchangeRate);
+            this.total *= exchangeRate;
+            this.housing *= exchangeRate;
+            this.food *= exchangeRate;
+            this.outing *= exchangeRate;
+            this.transport *= exchangeRate;
+            this.travel *= exchangeRate;
+            this.taxes *= exchangeRate;
+            this.other *= exchangeRate;
             inEuro = false;
         }
     }
 
     public void convertToEuro() {
-        if (!inEuro) {
-            logger.debug("Converting line {} from USD to EUR", period);
-            float oldTotal = this.total;
-            this.total = (float) CurrencyService.convertUsdToEur(this.total);
-            this.housing = (float) CurrencyService.convertUsdToEur(this.housing);
-            this.food = (float) CurrencyService.convertUsdToEur(this.food);
-            this.outing = (float) CurrencyService.convertUsdToEur(this.outing);
-            this.transport = (float) CurrencyService.convertUsdToEur(this.transport);
-            this.travel = (float) CurrencyService.convertUsdToEur(this.travel);
-            this.taxes = (float) CurrencyService.convertUsdToEur(this.taxes);
-            this.other = (float) CurrencyService.convertUsdToEur(this.other);
-            logger.debug("Converted total from ${} to €{}", oldTotal, this.total);
+        if (!inEuro && needsConversion()) {
+            logger.debug("Converting line {} from USD to EUR with rate {}", period, exchangeRate);
+            this.total /= exchangeRate;
+            this.housing /= exchangeRate;
+            this.food /= exchangeRate;
+            this.outing /= exchangeRate;
+            this.transport /= exchangeRate;
+            this.travel /= exchangeRate;
+            this.taxes /= exchangeRate;
+            this.other /= exchangeRate;
             inEuro = true;
         }
+    }
+
+    private boolean needsConversion() {
+        return Math.abs(exchangeRate - 1.0f) > 0.001f;
     }
 
     public Line() {}
