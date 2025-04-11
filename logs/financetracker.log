@@ -496,3 +496,78 @@
 2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
 2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
 2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend
+2025-04-11 11:41:07 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend
+2025-04-11 11:41:08 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:41:23 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:41:23 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.2
+2025-04-11 11:41:23 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.2
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:43:21 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:44:56 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.2
+2025-04-11 11:44:56 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:44:56 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:44:56 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:45:35 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.2
+2025-04-11 11:45:35 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:45:35 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:45:35 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:49:40 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.2
+2025-04-11 11:49:40 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:49:40 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:49:40 INFO  com.fahze.demojavafx.service.CurrencyService - EUR to USD rate set to: 1.09
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:53:31 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend
+2025-04-11 11:53:32 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 3 expenses
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:53:37 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 2 incomes
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:53:39 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:53:41 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:53:41 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:53:41 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:53:41 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 3 expenses
+2025-04-11 11:53:42 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:53:42 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:53:43 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-11 11:53:43 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-11 11:53:43 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in USD
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in EUR
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-11 11:53:44 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in USD
+2025-04-11 11:53:47 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:53:47 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:53:47 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend

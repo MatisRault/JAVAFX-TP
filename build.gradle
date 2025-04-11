@@ -70,6 +70,8 @@ dependencies {
     testImplementation("org.testfx:testfx-core:4.0.17")
     testImplementation("org.testfx:testfx-junit5:4.0.17")
     testImplementation("org.hamcrest:hamcrest:2.2")
+    testImplementation("org.assertj:assertj-core:3.24.2")
+
 }
 
 test {
