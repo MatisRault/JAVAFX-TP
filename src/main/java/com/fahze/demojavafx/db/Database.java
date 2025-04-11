@@ -8,7 +8,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
 
 public class Database {
     private static final Logger logger = LogManager.getLogger(Database.class);
@@ -34,7 +33,7 @@ public class Database {
             return false; //can't connect to db
         }
 
-        return createTableIfNotExists(); //tables didn't exist
+        return createTablesIfNotExist(); //tables didn't exist
     }
 
     private static boolean checkDrivers() {
@@ -57,8 +56,8 @@ public class Database {
         }
     }
 
-    private static boolean createTableIfNotExists() {
-        String createTables =
+    private static boolean createTablesIfNotExist() {
+        String createExpenseTable =
                 """
                 CREATE TABLE IF NOT EXISTS expense(
                      period TEXT NOT NULL,
@@ -73,12 +72,29 @@ public class Database {
                 );
                 """;
 
+        String createIncomeTable =
+                """
+                CREATE TABLE IF NOT EXISTS income(
+                     period TEXT NOT NULL,
+                     total REAL NOT NULL,
+                     salary REAL NOT NULL,
+                     benefits REAL NOT NULL,
+                     self_employment REAL NOT NULL,
+                     passive REAL NOT NULL,
+                     other REAL NOT NULL
+                );
+                """;
+
         try (Connection connection = Database.connect()) {
-            PreparedStatement statement = connection.prepareStatement(createTables);
+            PreparedStatement statement = connection.prepareStatement(createExpenseTable);
             statement.executeUpdate();
+
+            statement = connection.prepareStatement(createIncomeTable);
+            statement.executeUpdate();
+
             return true;
         } catch (SQLException exception) {
-            logger.error("Could not create table in database", exception);
+            logger.error("Could not create tables in database", exception);
             return false;
         }
     }

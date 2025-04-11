@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import com.fahze.demojavafx.CurrencySwitchButton?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fahze.demojavafx.IncomeController">
+
+    <top>
+        <fx:include source="header.fxml"/>
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <!-- Titre -->
+            <Label styleClass="titre-label">
+                Tableau des Revenus
+            </Label>
+
+            <!-- Ajout du switch de devise -->
+            <HBox alignment="CENTER_RIGHT" spacing="10">
+                <Label text="Devise:"/>
+                <CurrencySwitchButton fx:id="currencySwitch"/>
+            </HBox>
+
+            <!-- TableView -->
+            <TableView fx:id="tableView">
+                <columns>
+                    <TableColumn text="Période" fx:id="periodColumn"/>
+                    <TableColumn text="Total" fx:id="totalColumn"/>
+                    <TableColumn text="Salaire" fx:id="salaryColumn"/>
+                    <TableColumn text="Aides" fx:id="benefitsColumn"/>
+                    <TableColumn text="Auto-entreprise" fx:id="selfEmploymentColumn"/>
+                    <TableColumn text="Revenus passifs" fx:id="passiveColumn"/>
+                    <TableColumn text="Autres" fx:id="otherColumn"/>
+                </columns>
+            </TableView>
+
+            <Button text="Ajouter un revenu" onAction="#openAddIncomeDialog"/>
+        </VBox>
+    </center>
+</BorderPane>

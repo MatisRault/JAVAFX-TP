@@ -2,6 +2,7 @@
 
 <?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
@@ -14,7 +15,7 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.fahze.demojavafx.DashboardController"
-            prefHeight="600.0" prefWidth="800.0">
+            prefHeight="700.0" prefWidth="900.0">
 
     <top>
         <fx:include source="header.fxml"/>
@@ -46,6 +47,19 @@
                     </yAxis>
                 </LineChart>
             </HBox>
+
+            <!-- Nouveau graphique pour la comparaison des revenus et dépenses -->
+            <BarChart fx:id="incomeExpenseComparisonChart" title="Comparaison Revenus / Dépenses"
+                      legendVisible="true" alternativeRowFillVisible="false"
+                      barGap="1" categoryGap="25" horizontalGridLinesVisible="true">
+                <xAxis>
+                    <CategoryAxis label="Période" tickLabelRotation="45" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis label="Montant" autoRanging="true" forceZeroInRange="true"
+                                animated="false" minorTickVisible="false" tickLabelGap="5" />
+                </yAxis>
+            </BarChart>
         </VBox>
     </center>
 </BorderPane>

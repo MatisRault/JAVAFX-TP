@@ -255,3 +255,244 @@
 2025-04-10 15:33:37 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
 2025-04-10 15:33:37 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
 2025-04-10 15:33:37 INFO  com.fahze.demojavafx.HelloController - Table updated with 2 expenses in EUR
+2025-04-11 11:06:25 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 0 incomes
+2025-04-11 11:06:26 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 0 incomes
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 0 incomes
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:06:33 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:06:35 INFO  com.fahze.demojavafx.IncomeController - Opening Add Income Dialog
+2025-04-11 11:06:48 INFO  com.fahze.demojavafx.IncomeController - Processing new income for period: 1
+2025-04-11 11:06:48 INFO  com.fahze.demojavafx.db.IncomeDAO - Attempting to insert new income for period: 1
+2025-04-11 11:06:48 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully inserted income for period: 1
+2025-04-11 11:06:48 INFO  com.fahze.demojavafx.IncomeController - Successfully added income for period: 1
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: USD
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: USD
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in USD
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: EUR
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: EUR
+2025-04-11 11:06:51 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in USD
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: EUR
+2025-04-11 11:06:52 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in EUR
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: USD
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: USD
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in USD
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: EUR
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: EUR
+2025-04-11 11:06:53 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in EUR
+2025-04-11 11:06:57 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:06:57 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:06:57 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-11 11:06:57 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-11 11:06:58 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:06:58 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:07:29 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:07:29 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:07:29 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 1 incomes
+2025-04-11 11:07:29 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 1 incomes
+2025-04-11 11:07:30 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:07:30 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:07:32 INFO  com.fahze.demojavafx.IncomeController - Currency button clicked, switching to: USD
+2025-04-11 11:07:32 INFO  com.fahze.demojavafx.IncomeController - Updating table with currency: USD
+2025-04-11 11:07:32 INFO  com.fahze.demojavafx.IncomeController - Table updated with 1 incomes in USD
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 1 incomes
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:09:54 INFO  com.fahze.demojavafx.DashboardController - Income/expense comparison chart updated with 4 data points
+2025-04-11 11:09:55 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:10:05 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:10:05 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:10:05 INFO  com.fahze.demojavafx.DashboardController - Income/expense comparison chart updated with 4 data points
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 2 expenses
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 2 expenses
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:10:34 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:10:36 INFO  com.fahze.demojavafx.HelloController - Opening Add Line Dialog
+2025-04-11 11:10:57 INFO  com.fahze.demojavafx.HelloController - Processing new expense for period: 2
+2025-04-11 11:10:57 INFO  com.fahze.demojavafx.db.ExpenseDAO - Attempting to insert new expense for period: 2
+2025-04-11 11:10:57 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully inserted expense for period: 2
+2025-04-11 11:10:57 INFO  com.fahze.demojavafx.HelloController - Successfully added expense for period: 2
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 1 incomes
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 1 incomes
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:11:02 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:11:04 INFO  com.fahze.demojavafx.IncomeController - Opening Add Income Dialog
+2025-04-11 11:11:19 INFO  com.fahze.demojavafx.IncomeController - Processing new income for period: 2
+2025-04-11 11:11:19 INFO  com.fahze.demojavafx.db.IncomeDAO - Attempting to insert new income for period: 2
+2025-04-11 11:11:19 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully inserted income for period: 2
+2025-04-11 11:11:19 INFO  com.fahze.demojavafx.IncomeController - Successfully added income for period: 2
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:11:24 INFO  com.fahze.demojavafx.DashboardController - Income/expense comparison chart updated with 6 data points
+2025-04-11 11:11:27 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:11:27 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:11:27 INFO  com.fahze.demojavafx.DashboardController - Income/expense comparison chart updated with 6 data points
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:11:41 INFO  com.fahze.demojavafx.DashboardController - Income/expense comparison chart updated with 6 data points
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:15:53 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:15:54 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:16:03 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:16:03 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:16:03 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:24:10 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:24:11 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:24:12 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:24:19 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:24:19 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:24:19 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:24:27 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:24:27 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:24:27 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 3 expenses
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:24:51 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:24:52 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:24:52 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:24:52 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:24:52 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 2 incomes
+2025-04-11 11:24:53 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:24:53 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.IncomeController - Initializing IncomeController and setting up TableView
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.IncomeController - TableView initialized with 2 incomes
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:25:00 INFO  com.fahze.demojavafx.IncomeController - Exchange rate set to: 1.09
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.DashboardController - Found 3 unique periods for comparison chart
+2025-04-11 11:25:04 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 3 expenses
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:25:06 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:25:12 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-11 11:25:12 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-11 11:25:12 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in USD
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in EUR
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: USD
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: USD
+2025-04-11 11:25:13 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in USD
+2025-04-11 11:25:14 INFO  com.fahze.demojavafx.HelloController - Currency button clicked, switching to: EUR
+2025-04-11 11:25:14 INFO  com.fahze.demojavafx.HelloController - Updating table with currency: EUR
+2025-04-11 11:25:14 INFO  com.fahze.demojavafx.HelloController - Table updated with 3 expenses in EUR
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:27:48 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:27:49 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:28:37 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully
+2025-04-11 11:28:38 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:29:00 INFO  com.fahze.demojavafx.HelloController - Initializing HelloController and setting up TableView
+2025-04-11 11:29:00 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:29:00 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:29:00 INFO  com.fahze.demojavafx.HelloController - TableView initialized with 3 expenses
+2025-04-11 11:29:01 INFO  com.fahze.demojavafx.service.CurrencyService - Retrieved EUR to USD rate: 1.09
+2025-04-11 11:29:01 INFO  com.fahze.demojavafx.HelloController - Exchange rate set to: 1.09
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:30:54 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend
+2025-04-11 11:30:55 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.HelloApplication - Lancement de l'application
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Initializing Dashboard
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.db.ExpenseDAO - Fetching all expenses from database
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.db.ExpenseDAO - Successfully retrieved 3 expenses
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.db.IncomeDAO - Fetching all incomes from database
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.db.IncomeDAO - Successfully retrieved 2 incomes
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Filtered out period 121, remaining expenses: 2, remaining incomes: 2
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Chart scale configured with upper bound set to 30000
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:31:40 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend
+2025-04-11 11:31:41 INFO  com.fahze.demojavafx.HelloApplication - Application started successfully
+2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Updating income/expense comparison chart
+2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Found 2 unique periods for comparison chart
+2025-04-11 11:32:12 INFO  com.fahze.demojavafx.DashboardController - Comparison chart updated successfully with visible legend

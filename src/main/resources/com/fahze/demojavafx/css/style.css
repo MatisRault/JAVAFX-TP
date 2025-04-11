@@ -1,90 +1,369 @@
-.layout {
-    -fx-background-color: #1e1e1e; /* Fond gris foncé */
+/*
+ * Style CSS clair et minimaliste pour Finance Tracker
+ * Palette de couleurs : bleu clair, blanc, gris clair
+ */
+
+/* Styles globaux */
+.root {
+    -fx-background-color: #f5f8fa;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 13px;
 }
 
-.table-view {
-    -fx-background-color: #2d2d2d; /* Fond de tableau légèrement plus clair */
-    -fx-table-cell-border-color: transparent; /* Supprime les bordures des cellules */
+/* En-tête et menu */
+.menu-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e1e7ec;
+    -fx-border-width: 0 0 1px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 5, 0, 0, 2);
 }
 
-.currency-switch-button {
-    -fx-background-color: #3c5f8a;
+.menu-bar .menu {
+    -fx-padding: 5px 10px;
+}
+
+.menu-bar .menu:hover {
+    -fx-background-color: #f0f4f8;
+}
+
+.menu-bar .menu .label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: normal;
+}
+
+.menu-item {
+    -fx-padding: 8px 15px 8px 15px;
+}
+
+.menu-item:focused {
+    -fx-background-color: #3498db;
+}
+
+.menu-item:focused .label {
     -fx-text-fill: white;
+}
+
+/* Titres */
+.titre-label {
+    -fx-font-size: 22px;
     -fx-font-weight: bold;
-    -fx-background-radius: 3;
-    -fx-min-width: 40px;
-    -fx-max-width: 40px;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 20px 0 15px 0;
 }
 
-.currency-switch-button:hover {
-    -fx-background-color: #4d6fa0;
+/* Tableaux */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #e1e7ec;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 5, 0, 0, 2);
 }
 
-.table-view .column-header,
-.table-view .column-header-background .filter,
-.table-view .corner {
-    -fx-background-color: #383838; /* En-têtes de colonne plus foncés */
-    -fx-border-color: transparent; /* Supprime les bordures */
+.table-view .column-header-background {
+    -fx-background-color: #f0f4f8;
+    -fx-background-radius: 5 5 0 0;
+    -fx-border-color: #e1e7ec;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 45px;
+    -fx-border-color: transparent;
 }
 
 .table-view .column-header .label {
-    -fx-text-fill: #e0e0e0; /* Texte clair mais pas blanc pur */
-    -fx-font-weight: normal; /* Police non grasse pour plus d'élégance */
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 5px;
 }
 
 .table-view .table-cell {
-    -fx-text-fill: #cccccc; /* Couleur de texte des cellules */
-    -fx-alignment: center-left; /* Alignement du texte */
-    -fx-padding: 8px; /* Espacement interne */
+    -fx-border-color: transparent;
+    -fx-padding: 12px 5px;
+    -fx-alignment: center-left;
 }
 
 .table-row-cell {
-    -fx-background-color: #2d2d2d; /* Même couleur que le tableau */
+    -fx-background-color: white;
+    -fx-text-fill: #2c3e50;
 }
 
 .table-row-cell:odd {
-    -fx-background-color: #333333; /* Légère alternance pour les lignes impaires */
+    -fx-background-color: #f9fbfd;
 }
 
 .table-row-cell:selected {
-    -fx-background-color: #3c5f8a; /* Bleu foncé pour la sélection */
+    -fx-background-color: #e1f0fa;
 }
 
-.titre-label {
-    -fx-font-size: 18px; /* Taille réduite pour plus d'élégance */
-    -fx-font-weight: 300; /* Police fine */
-    -fx-text-fill: #e0e0e0; /* Texte clair */
-    -fx-padding: 15px 0; /* Plus d'espace vertical */
-    -fx-font-family: "Segoe UI Light", sans-serif; /* Police moderne et légère */
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #2c3e50;
 }
 
-/* Styles supplémentaires pour l'interface épurée */
+/* Boutons */
 .button {
-    -fx-background-color: #3c3c3c;
-    -fx-text-fill: #e0e0e0;
-    -fx-background-radius: 2;
-    -fx-border-width: 0;
-    -fx-padding: 8px 15px;
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
 }
 
 .button:hover {
-    -fx-background-color: #4c4c4c;
+    -fx-background-color: #2980b9;
 }
 
+.button:pressed {
+    -fx-background-color: #1f6aa5;
+}
+
+/* Selector */
+.choice-box {
+    -fx-background-color: white;
+    -fx-border-color: #e1e7ec;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5px 10px;
+}
+
+.choice-box .label {
+    -fx-text-fill: #2c3e50;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #e1e7ec;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+/* Bouton de changement de devise */
+.currency-switch-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-min-width: 55px;
+    -fx-max-width: 55px;
+    -fx-padding: 5px 10px;
+}
+
+.currency-switch-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Graphiques */
+.chart {
+    -fx-padding: 15px;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #e1e7ec;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 5, 0, 0, 2);
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.chart-plot-background {
+    -fx-background-color: white;
+}
+
+.chart-legend {
+    -fx-background-color: #f9fbfd;
+    -fx-padding: 10px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.axis {
+    -fx-tick-label-fill: #7f8c8d;
+    -fx-font-size: 12px;
+}
+
+.axis-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 12px;
+}
+
+/* Couleurs spécifiques pour les graphiques */
+.default-color0.chart-bar {
+    -fx-bar-fill: #e74c3c;   /* Rouge pour les dépenses */
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: #2ecc71;   /* Vert pour les revenus */
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #3498db;  /* Bleu */
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #2ecc71;  /* Vert */
+}
+
+.default-color2.chart-pie {
+    -fx-pie-color: #e74c3c;  /* Rouge */
+}
+
+.default-color3.chart-pie {
+    -fx-pie-color: #f39c12;  /* Orange */
+}
+
+.default-color4.chart-pie {
+    -fx-pie-color: #9b59b6;  /* Violet */
+}
+
+.default-color5.chart-pie {
+    -fx-pie-color: #34495e;  /* Bleu foncé */
+}
+
+.default-color6.chart-pie {
+    -fx-pie-color: #16a085;  /* Turquoise */
+}
+
+/* Séries pour le graphique d'évolution */
+.default-color0.chart-series-line {
+    -fx-stroke: #3498db;  /* Bleu - Logement */
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #2ecc71;  /* Vert - Nourriture */
+}
+
+.default-color2.chart-series-line {
+    -fx-stroke: #e74c3c;  /* Rouge - Sorties */
+}
+
+.default-color3.chart-series-line {
+    -fx-stroke: #f39c12;  /* Orange - Transport */
+}
+
+.default-color4.chart-series-line {
+    -fx-stroke: #9b59b6;  /* Violet - Voyage */
+}
+
+/* Champs de texte */
 .text-field {
-    -fx-background-color: #3c3c3c;
-    -fx-text-fill: #e0e0e0;
-    -fx-prompt-text-fill: #8a8a8a;
-    -fx-border-width: 0;
-    -fx-background-radius: 2;
-    -fx-padding: 8px;
+    -fx-background-color: white;
+    -fx-border-color: #e1e7ec;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8px 12px;
+    -fx-text-fill: #2c3e50;
 }
 
-/* Pour une interface plus propre */
+.text-field:focused {
+    -fx-border-color: #3498db;
+}
+
+/* Boîtes de dialogue */
+.dialog-pane {
+    -fx-background-color: #f5f8fa;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #3498db;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content {
+    -fx-padding: 15px;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 8px 15px;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Scrollbar */
 .scroll-bar {
-    -fx-background-color: #2d2d2d;
+    -fx-background-color: #f5f8fa;
+    -fx-background-radius: 0;
 }
 
 .scroll-bar .thumb {
-    -fx-background-color: #5a5a5a;
+    -fx-background-color: #bdc3c7;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #95a5a6;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #7f8c8d;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #2c3e50;
+}
+/* Styles spécifiques pour les légendes des graphiques */
+.chart-legend {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e1e7ec;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 5, 0, 0, 2);
+}
+
+.chart-legend-item {
+    -fx-padding: 5px 10px;
+}
+
+.chart-legend-item-symbol {
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-padding: 5px;
+}
+
+/* Styles pour les séries du graphique de comparaison */
+.default-color0.chart-bar { /* Revenus */
+    -fx-bar-fill: #4caf50;
+}
+
+.default-color1.chart-bar { /* Dépenses */
+    -fx-bar-fill: #f44336;
+}
+
+/* Pour les symboles de légende */
+.default-color0.chart-legend-item-symbol {
+    -fx-background-color: #4caf50;
+}
+
+.default-color1.chart-legend-item-symbol {
+    -fx-background-color: #f44336;
+}
+
+/* Augmenter la taille des étiquettes de légende */
+.chart-legend-item-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
 }

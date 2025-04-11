@@ -18,6 +18,9 @@ public class HeaderController {
     private MenuItem expensesMenuItem;
 
     @FXML
+    private MenuItem incomesMenuItem;
+
+    @FXML
     public void initialize() {
     }
 
@@ -36,6 +39,15 @@ public class HeaderController {
         Stage stage = getStageFromMenuItem(expensesMenuItem);
         stage.setScene(new Scene(loader.load()));
         stage.setTitle("Finance Tracker - Dépenses");
+        stage.show();
+    }
+
+    @FXML
+    public void navigateToIncomes() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("income.fxml"));
+        Stage stage = getStageFromMenuItem(incomesMenuItem);
+        stage.setScene(new Scene(loader.load()));
+        stage.setTitle("Finance Tracker - Revenus");
         stage.show();
     }
 

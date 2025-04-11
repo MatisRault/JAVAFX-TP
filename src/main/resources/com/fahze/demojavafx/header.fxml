@@ -11,5 +11,6 @@
     <Menu text="Navigation">
         <MenuItem fx:id="dashboardMenuItem" text="Tableau de bord" onAction="#navigateToDashboard"/>
         <MenuItem fx:id="expensesMenuItem" text="Dépenses" onAction="#navigateToExpenses"/>
+        <MenuItem fx:id="incomesMenuItem" text="Revenus" onAction="#navigateToIncomes"/>
     </Menu>
 </MenuBar>

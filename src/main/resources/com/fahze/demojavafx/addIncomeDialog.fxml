@@ -1,0 +1,34 @@
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<GridPane fx:id="gridPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.fahze.demojavafx.AddIncomeDialogController"
+          hgap="10" vgap="10">
+
+    <!-- Set Padding Correctly -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Période:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="periodField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Total:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="totalField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Salaire:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="salaryField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Aides:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="benefitsField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Auto-entreprise:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="selfEmploymentField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Revenus passifs:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextField fx:id="passiveField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Autres:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <TextField fx:id="otherField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+</GridPane>
